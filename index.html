@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PMOC - Manutenção Preventiva e Corretiva de Refrigeração e Climatização">
+    <title>PMOC - Manutenção Preventiva e Corretiva</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <header>
+        <h1>PMOC - Manutenção Preventiva e Corretiva</h1>
+        <label for="logo-upload">Escolha o Logo:</label>
+        <input type="file" id="logo-upload" accept="image/*">
+        <img id="logo-preview" alt="Logo da Empresa">
+    </header>
+
+    <section id="user-profile">
+        <h2>Perfil do Usuário</h2>
+        <form id="profile-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite seu nome" required>
+            
+            <label for="photo-upload">Foto do Perfil:</label>
+            <input type="file" id="photo-upload" accept="image/*">
+            <img id="photo-preview" alt="Foto de perfil">
+
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" placeholder="Digite seu telefone">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Digite seu email">
+
+            <label for="social-media">Redes Sociais:</label>
+            <input type="text" id="social-media" placeholder="Digite suas redes sociais">
+
+            <button type="submit">Salvar Perfil</button>
+        </form>
+    </section>
+
+    <section id="service-order">
+        <h2>Ordem de Serviço</h2>
+        <form id="service-order-form">
+            <label for="os-number">Número da OS:</label>
+            <input type="text" id="os-number" placeholder="Digite o número da OS" required>
+            <label for="contract-number">Número do contrato:</label>
+            <input type="text" id="contract-number" placeholder="Digite o número do contrato">
+            <label for="client">Cliente:</label>
+            <input type="text" id="client" placeholder="Digite o nome do cliente">
+            <!-- Continue preenchendo os campos conforme especificado -->
+            <!-- Inclua as demais seções como checklist, medições, etc -->
+        </form>
+    </section>
+
+    <footer>
+        <button id="generate-report">Gerar Relatório</button>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
